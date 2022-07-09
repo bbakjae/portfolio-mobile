@@ -1,3 +1,4 @@
+import { isMobile } from 'react-device-detect';
 import { scrollToHome, scrollToProject, scrollToTechStack } from './behavior';
 import { img } from './images';
 import { projects } from './ProjectInfo';
@@ -38,6 +39,9 @@ const techImages = [
 ];
 
 const HomePage = () => {
+  if (!isMobile) {
+    window.location.href = 'https://bbakjae.me';
+  }
   return (
     <div className='main-page'>
       {/* 자기소개 */}
