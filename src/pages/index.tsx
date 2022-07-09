@@ -40,39 +40,16 @@ const techImages = [
 const HomePage = () => {
   return (
     <div className='main-page'>
-      {/* 메뉴바 */}
-      <div className='menu-text-box'>
-        <img className='menu-img' src={logo.src} />
-        <div className='menu-text'>
-          <button className='menu-text-content' onClick={scrollToHome}>
-            Home
-          </button>
-          <button className='menu-text-content'>About</button>
-          <button className='menu-text-content' onClick={scrollToTechStack}>
-            Tech&nbsp;Stack
-          </button>
-          <button className='menu-text-content' onClick={scrollToProject}>
-            Projects
-          </button>
-          <button className='menu-text-content'>Contact</button>
-        </div>
-        <div className='menu-icon-box'>
-          <a href='https://github.com/bbakjae' className='menu-icon'>
-            <img src={github.src}></img>
-          </a>
-          <a href='https://api.bbakjae.me/portfolio/graphql' className='menu-icon'>
-            <img src={graphqlMenu.src}></img>
-          </a>
-          <a href='https://www.instagram.com/bbak__jae/' className='menu-icon'>
-            <img src={insta.src}></img>
-          </a>
-        </div>
-      </div>
       {/* 자기소개 */}
       <div className='intro-box'>
         <div className='intro-text'>
           반갑습니다 👋 <br />
-          소통하는<span className='name-gradient'> 개발자</span> 박재현입니다. <br />
+          소통하는
+          <span className='name-gradient'>
+            개발자
+            <br />
+          </span>{' '}
+          박재현입니다. <br />
           <span className='name-gradient'>{'{'} </span>BackEnd Developer{' '}
           <span className='name-gradient'> {'}'}</span>
           <br />
