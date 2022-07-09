@@ -39,9 +39,6 @@ const techImages = [
 ];
 
 const HomePage = () => {
-  if (!isMobile) {
-    window.location.href = 'https://bbakjae.me';
-  }
   return (
     <div className='main-page'>
       {/* 자기소개 */}
