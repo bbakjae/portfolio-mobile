@@ -1,4 +1,5 @@
 import { isMobile } from 'react-device-detect';
+import { aboutData } from './aboutData';
 import { scrollToHome, scrollToProject, scrollToTechStack } from './behavior';
 import { img } from './images';
 import { projects } from './ProjectInfo';
@@ -56,6 +57,20 @@ const HomePage = () => {
           <br />
         </div>
         <img src={profile.src} className='intro-img' />
+      </div>
+      {/* About */}
+      <div className='about'>
+        <div className='about-title'>About</div>
+        {aboutData.map(v => {
+          return (
+            <div className='about-container'>
+              <span className='about-data-title-first-letter'>{v.title[0]}</span>
+              <div className='about-data-title'>{v.title.slice(1)}</div>
+              <div className='about-bar'></div>
+              <div className='about-data-content'>{v.content}</div>
+            </div>
+          );
+        })}
       </div>
       {/* Stack List */}
       <div className='stack'>
