@@ -57,6 +57,7 @@
 }
 .menu-icon {
   margin-inline: 0.5rem;
+  padding: 3%;
 }
 
 .intro-box {
@@ -284,8 +285,9 @@
 }
 
 .contact-right {
-  margin-top: 10%;
-  margin-right: 20%;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 
   color: #cccccc;
   float: right;
